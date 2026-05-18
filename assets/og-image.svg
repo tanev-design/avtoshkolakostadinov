@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f6f5f2"/>
+      <stop offset="1" stop-color="#ecebe7"/>
+    </linearGradient>
+    <linearGradient id="glow" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#c91118" stop-opacity="0.10"/>
+      <stop offset="1" stop-color="#c91118" stop-opacity="0"/>
+    </linearGradient>
+    <pattern id="grid" width="60" height="60" patternUnits="userSpaceOnUse">
+      <path d="M60 0H0V60" fill="none" stroke="#171717" stroke-opacity="0.04"/>
+    </pattern>
+    <radialGradient id="wheelHalo" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#c91118" stop-opacity="0.18"/>
+      <stop offset="0.6" stop-color="#c91118" stop-opacity="0.04"/>
+      <stop offset="1" stop-color="#c91118" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#grid)"/>
+  <rect width="780" height="630" fill="url(#glow)"/>
+
+  <!-- BRAND ROW (top-left) -->
+  <g transform="translate(72 64)">
+    <rect width="52" height="52" rx="12" fill="#c91118"/>
+    <g transform="translate(26 26)" fill="none" stroke="#fff" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="0" cy="0" r="14.5"/>
+      <circle cx="0" cy="0" r="3.6" fill="#fff" stroke="none"/>
+      <path d="M0 -14.5v11"/>
+      <path d="M-12.6 7.2l9-5.3"/>
+      <path d="M12.6 7.2l-9-5.3"/>
+    </g>
+    <text x="72" y="20" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="900" fill="#c91118" letter-spacing="2.6">АВТОШКОЛА · ПЛОВДИВ</text>
+    <text x="72" y="44" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="900" fill="#171717" letter-spacing="-0.3">Костадинов</text>
+  </g>
+
+  <!-- HEADLINE (left column, capped width) -->
+  <g transform="translate(72 220)">
+    <text font-family="Inter, Arial, sans-serif" font-size="64" font-weight="900" fill="#171717" letter-spacing="-1.6">
+      <tspan x="0" dy="0">Шофьорски курсове</tspan>
+      <tspan x="0" dy="76">в Пловдив от 1983.</tspan>
+    </text>
+    <rect x="0" y="170" width="112" height="7" fill="#c91118"/>
+  </g>
+
+  <!-- SUBTITLE -->
+  <text x="72" y="478" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="600" fill="#636363" letter-spacing="0.2">
+    Категории A · A2 · B · B+E · C · CE
+  </text>
+
+  <!-- PHONE CTA -->
+  <g transform="translate(72 514)">
+    <rect width="276" height="52" rx="26" fill="#c91118"/>
+    <g transform="translate(26 26)" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M11 8.5v1.6a1 1 0 0 1-1.1 1 9.9 9.9 0 0 1-4.3-1.5 9.6 9.6 0 0 1-3-3 9.9 9.9 0 0 1-1.5-4.3A1 1 0 0 1 2.1 1.2h1.6a1 1 0 0 1 1 .85c.06.48.18.95.35 1.4a1 1 0 0 1-.22 1.05L4 5.3a8 8 0 0 0 3 3l.78-.78a1 1 0 0 1 1.05-.22c.45.17.92.29 1.4.35a1 1 0 0 1 .85 1z"/>
+    </g>
+    <text x="60" y="33" font-family="Inter, Arial, sans-serif" font-size="20" font-weight="900" fill="#fff" letter-spacing="0.4">0898 211 935</text>
+  </g>
+
+  <!-- FOOTER -->
+  <text x="72" y="600" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="700" fill="#8b8b86" letter-spacing="0.2">avto6kola.com  ·  ул. Борис Петров 2  ·  бул. Христо Ботев 80</text>
+
+  <!-- RIGHT COLUMN: STEERING WHEEL (anchored at x=970, fully isolated from text) -->
+  <g transform="translate(970 315)">
+    <circle r="220" fill="url(#wheelHalo)"/>
+    <g fill="none" stroke="#171717" stroke-width="9" stroke-linecap="round" stroke-linejoin="round">
+      <circle r="148"/>
+      <circle r="36" fill="#171717" stroke="none"/>
+      <path d="M0 -148v-28" stroke="#171717" stroke-width="0"/>
+      <path d="M0 -148L0 -36"/>
+      <path d="M-128 74L-31 18"/>
+      <path d="M128 74L31 18"/>
+    </g>
+    <circle r="6" fill="#c91118"/>
+  </g>
+</svg>

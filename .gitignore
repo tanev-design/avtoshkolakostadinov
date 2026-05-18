@@ -1,0 +1,4 @@
+backup/
+.vercel/
+*.log
+node_modules/
