@@ -36,7 +36,7 @@
   <link rel="alternate icon" href="assets/logo-original.jpg" />
   <link rel="apple-touch-icon" href="assets/favicon.svg" />
   <link rel="mask-icon" href="assets/favicon.svg" color="#c91118" />
-  <link rel="preload" as="image" href="assets/hero-captur.jpg" fetchpriority="high" />
+  <link rel="preload" as="image" href="assets/newhero-car.jpg" fetchpriority="high" />
   <link rel="preconnect" href="https://www.google.com" />
   <link rel="dns-prefetch" href="https://maps.google.com" />
   <link rel="stylesheet" href="styles.css" />
@@ -52,7 +52,7 @@
     "logo": "https://avto6kola.com/assets/favicon.svg",
     "image": [
       "https://avto6kola.com/assets/og-image.jpg",
-      "https://avto6kola.com/assets/hero-captur.jpg"
+      "https://avto6kola.com/assets/newhero-car.jpg"
     ],
     "telephone": "+359898211935",
     "email": "avto6kola@abv.bg",
@@ -185,8 +185,24 @@
           </a>
         </div>
         <div class="segmented" aria-label="Language">
-          <button type="button" data-lang="bg" class="is-active">BG</button>
-          <button type="button" data-lang="en">EN</button>
+          <button type="button" data-lang="bg" class="is-active">
+            <svg viewBox="0 0 3 2" width="1.2em" height="0.9em" aria-hidden="true" style="border-radius:2px; box-shadow:0 0 0 1px rgba(0,0,0,0.15) inset;"><rect width="3" height="2" fill="#fff"/><rect width="3" height="0.666" fill="#fff"/><rect width="3" height="0.666" y="0.666" fill="#00966E"/><rect width="3" height="0.666" y="1.333" fill="#D62612"/></svg>
+            BG
+          </button>
+          <button type="button" data-lang="en">
+            <svg viewBox="0 0 60 30" width="1.2em" height="0.9em" aria-hidden="true" style="border-radius:2px; box-shadow:0 0 0 1px rgba(0,0,0,0.15) inset;">
+              <clipPath id="s"><path d="M0,0 v30 h60 v-30 z"/></clipPath>
+              <clipPath id="t"><path d="M30,15 h30 v15 z v15 h-30 z h-30 v-15 z v-15 h30 z"/></clipPath>
+              <g clip-path="url(#s)">
+                <path d="M0,0 v30 h60 v-30 z" fill="#012169"/>
+                <path d="M0,0 L60,30 M60,0 L0,30" stroke="#fff" stroke-width="6"/>
+                <path d="M0,0 L60,30 M60,0 L0,30" clip-path="url(#t)" stroke="#C8102E" stroke-width="4"/>
+                <path d="M30,0 v30 M0,15 h60" stroke="#fff" stroke-width="10"/>
+                <path d="M30,0 v30 M0,15 h60" stroke="#C8102E" stroke-width="6"/>
+              </g>
+            </svg>
+            EN
+          </button>
         </div>
         <a class="phone-link" href="tel:+359898211935" aria-label="Обадете се на 0898 211 935">
           <svg class="phone-ico" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -212,36 +228,48 @@
         <span data-i18n="hero.courseDate">18.05.2026г.</span>
         </div>
       </div>
-      <div class="hero-media" aria-label="Учебен автомобил Renault Captur">
-        <img src="assets/hero-captur.jpg" width="1620" height="802" alt="Нов червен Renault Captur учебен автомобил на Автошкола Костадинов" fetchpriority="high" decoding="async" />
+      <div class="hero-media" aria-label="Учебен автомобил">
+        <img src="assets/newhero-car.jpg" width="1320" height="724" alt="Учебен автомобил на Автошкола Костадинов" fetchpriority="high" decoding="async" />
       </div>
     </section>
 
     <section class="welcome-note" aria-labelledby="welcome-title">
-      <div>
-        <p class="section-kicker" data-i18n="welcome.kicker">Добре дошли</p>
-        <h2 id="welcome-title" data-i18n="welcome.title">Добре дошли в АВТОШКОЛА КОСТАДИНОВ ПЛОВДИВ</h2>
+      <div class="welcome-content-wrapper">
+        <div class="welcome-header">
+          <p class="section-kicker" data-i18n="welcome.kicker">Добре дошли</p>
+          <h2 id="welcome-title" data-i18n="welcome.title">Добре дошли в АВТОШКОЛА КОСТАДИНОВ ПЛОВДИВ</h2>
+        </div>
+        <p data-i18n="welcome.body">Шофьорските курсове не са най-важното нещо в живота, нито най-трудното. Накрая на шофьорския курс трябва да можете да управлявате автомобила самостоятелно и безопасно. Но добър шофьор ще станете с годините и километрите , в които сте внимателни, отговорни и отпочинали. Уважавайте и пазете себе си и останалите на пътя.</p>
       </div>
-      <p data-i18n="welcome.body">Шофьорските курсове не са най-важното нещо в живота, нито най-трудното. Накрая на шофьорския курс трябва да можете да управлявате автомобила самостоятелно и безопасно. Но добър шофьор ще станете с годините и километрите , в които сте внимателни, отговорни и отпочинали. Уважавайте и пазете себе си и останалите на пътя.</p>
-      <div class="reflex-tester compact" data-reflex>
-        <div class="reflex-mini-copy">
+      <div class="reflex-tester" data-reflex>
+        <div class="reflex-info">
           <p class="section-kicker" data-i18n="reflex.kicker">Рефлекси</p>
           <h3 data-i18n="reflex.title">Изпробвайте своите реакции</h3>
           <p data-i18n="reflex.body">Натиснете старт. Изчакайте полето да стане червено и натиснете стоп възможно най-бързо. Ако натиснете твърде рано, тестът започва отначало.</p>
+          <div class="reflex-stats">
+            <div class="stat-box">
+              <em data-i18n="reflex.last">Последен</em>
+              <strong data-reflex-last>--</strong>
+            </div>
+            <div class="stat-box highlight">
+              <em data-i18n="reflex.best">Най-добър</em>
+              <strong data-reflex-best>--</strong>
+            </div>
+            <div class="stat-box">
+              <em data-i18n="reflex.avg">Средно</em>
+              <strong data-reflex-average>--</strong>
+            </div>
+          </div>
         </div>
-        <div class="reflex-stage" data-reflex-stage>
-          <span data-reflex-status>Готови?</span>
-          <strong data-reflex-result>-- ms</strong>
-        </div>
-        <div class="reflex-side">
+        <div class="reflex-interactive">
+          <div class="reflex-stage" data-reflex-stage>
+            <span data-reflex-status>Готови?</span>
+            <strong data-reflex-result>-- ms</strong>
+            <div class="reflex-pulse"></div>
+          </div>
           <div class="reflex-controls">
             <button type="button" class="btn btn-primary" data-reflex-start data-i18n="reflex.start">Старт</button>
             <button type="button" class="btn btn-secondary" data-reflex-stop data-i18n="reflex.stop">Стоп</button>
-          </div>
-          <div class="reflex-stats">
-            <span><em data-i18n="reflex.last">Последен</em><strong data-reflex-last>--</strong></span>
-            <span><em data-i18n="reflex.best">Най-добър</em><strong data-reflex-best>--</strong></span>
-            <span><em data-i18n="reflex.avg">Средно</em><strong data-reflex-average>--</strong></span>
           </div>
         </div>
       </div>
@@ -255,13 +283,8 @@
       <div class="course-grid">
         <article class="course-card">
           <span class="course-icon" aria-hidden="true">
-            <svg viewBox="0 0 48 48" width="48" height="48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <circle cx="11" cy="34" r="7"/>
-              <circle cx="37" cy="34" r="7"/>
-              <path d="M11 34l7-11h9l-4-6h-5"/>
-              <path d="M27 23l6 6h4l-2-7"/>
-              <path d="M30 17h6l-2 6"/>
-              <path d="M21 13h5"/>
+            <svg viewBox="0 0 24 24" width="48" height="48" fill="currentColor">
+              <path d="M17.42,10L13.41,6H9V8H12.59L14.59,10H6.5C4,10 2,12 2,14.5C2,17 4,19 6.5,19C8.72,19 10.56,17.38 10.92,15.27L13.04,14C13,14.17 13,14.33 13,14.5C13,17 15,19 17.5,19C20,19 22,17 22,14.5C22,12 20,10 17.5,10M8.84,15.26C8.5,16.27 7.58,17 6.47,17C5.09,17 3.97,15.88 3.97,14.5C3.97,13.12 5.09,12 6.47,12C7.59,12 8.5,12.74 8.84,13.75H6V15.25L8.84,15.26M17.47,17C16.09,17 14.97,15.88 14.97,14.5C14.97,13.12 16.09,12 17.47,12A2.5,2.5 0 0,1 19.97,14.5A2.5,2.5 0 0,1 17.47,17Z"/>
             </svg>
           </span>
           <h3 data-i18n="course.a.title">Категория А, А2</h3>
@@ -270,14 +293,8 @@
         </article>
         <article class="course-card is-featured">
           <span class="course-icon" aria-hidden="true">
-            <svg viewBox="0 0 48 48" width="48" height="48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M6 30v-3l3-1 3-8a3 3 0 0 1 2.8-2h18.4A3 3 0 0 1 36 18l3 8 3 1v3"/>
-              <path d="M6 30v5h6v-5"/>
-              <path d="M36 30v5h6v-5"/>
-              <path d="M9 26h30"/>
-              <circle cx="14" cy="32" r="3.5"/>
-              <circle cx="34" cy="32" r="3.5"/>
-              <path d="M19 22h10"/>
+            <svg viewBox="0 0 24 24" width="48" height="48" fill="currentColor">
+              <path d="M16,6L19,10H21C22.11,10 23,10.89 23,12V15H21A3,3 0 0,1 18,18A3,3 0 0,1 15,15H9A3,3 0 0,1 6,18A3,3 0 0,1 3,15H1V12C1,10.89 1.89,10 3,10L6,6H16M10.5,7.5H6.75L4.86,10H10.5V7.5M12,7.5V10H17.14L15.25,7.5H12M6,13.5A1.5,1.5 0 0,0 4.5,15A1.5,1.5 0 0,0 6,16.5A1.5,1.5 0 0,0 7.5,15A1.5,1.5 0 0,0 6,13.5M18,13.5A1.5,1.5 0 0,0 16.5,15A1.5,1.5 0 0,0 18,16.5A1.5,1.5 0 0,0 19.5,15A1.5,1.5 0 0,0 18,13.5Z"/>
             </svg>
           </span>
           <h3 data-i18n="course.b.title">Категория В, В+Е</h3>
@@ -286,13 +303,8 @@
         </article>
         <article class="course-card">
           <span class="course-icon" aria-hidden="true">
-            <svg viewBox="0 0 48 48" width="48" height="48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M4 12h22v22H4z"/>
-              <path d="M26 20h10l6 6v8H26"/>
-              <path d="M26 26h16"/>
-              <circle cx="12" cy="36" r="3.5"/>
-              <circle cx="34" cy="36" r="3.5"/>
-              <path d="M4 34h4M16 34h11M38 34h4"/>
+            <svg viewBox="0 0 24 24" width="48" height="48" fill="currentColor">
+              <path d="M18,18.5A1.5,1.5 0 0,1 16.5,17A1.5,1.5 0 0,1 18,15.5A1.5,1.5 0 0,1 19.5,17A1.5,1.5 0 0,1 18,18.5M19.5,9.5L21.46,12H17V9.5M6,18.5A1.5,1.5 0 0,1 4.5,17A1.5,1.5 0 0,1 6,15.5A1.5,1.5 0 0,1 7.5,17A1.5,1.5 0 0,1 6,18.5M20,8H17V4H3C1.89,4 1,4.89 1,6V17H3A3,3 0 0,0 6,20A3,3 0 0,0 9,17H15A3,3 0 0,0 18,20A3,3 0 0,0 21,17H23V12L20,8Z"/>
             </svg>
           </span>
           <h3 data-i18n="course.c.title">Категория С, СЕ</h3>
@@ -414,22 +426,7 @@
       </div>
     </section>
 
-    <section class="proof section-pad" id="reviews" aria-labelledby="reviews-title">
-      <div class="section-head">
-        <div>
-          <p class="section-kicker" data-i18n="reviews.kicker">Отзиви</p>
-          <h2 id="reviews-title" data-i18n="reviews.title">5.00/5 в Google според отзивите в мрежата</h2>
-        </div>
-        <a class="source-link" href="https://www.oink.bg/biz/avtoshkola8" target="_blank" rel="noopener noreferrer" data-i18n="reviews.source">Източник: Oink.bg / Google</a>
-      </div>
-      <div class="review-summary">
-        <div>
-          <strong>5.00</strong>
-          <span aria-label="5 stars">★★★★★</span>
-          <p data-i18n="reviews.count">11 отзива в Google</p>
-        </div>
-        <p data-i18n="reviews.note">Кратки реални коментари, видими в публичните профили на автошколата.</p>
-      </div>
+    <section class="proof section-pad" id="reviews" aria-label="Отзиви">
       <div class="review-marquee" data-review-marquee aria-label="Google отзиви">
         <div class="review-track" data-review-track>
           <article>
@@ -512,7 +509,6 @@
           <li><span data-i18n="contact.phone">Тел.:</span> <a href="tel:+359898211935">0898211935</a></li>
           <li><span>E-mail:</span> <a href="mailto:avto6kola@abv.bg">avto6kola@abv.bg</a></li>
           <li data-i18n="contact.address">Пловдив ул. „Борис Петров“ № 2 Учебен кабинет и офис бул.“Христо Ботев -80 / Сточна гара /</li>
-          <li><a href="https://www.facebook.com/avto6kola" target="_blank" rel="noopener noreferrer" data-i18n="contact.facebook">Facebook АВТОШКОЛА КОСТАДИНОВ ПЛОВДИВ</a></li>
         </ul>
       </div>
       <div class="map-card" aria-label="Google карта">

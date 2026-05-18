@@ -533,5 +533,15 @@ reflexStage.addEventListener("click", () => {
   else stopReflexTest();
 });
 
+const reviewTrack = document.querySelector('[data-review-track]');
+if (reviewTrack) {
+  const reviews = Array.from(reviewTrack.children);
+  reviews.forEach(review => {
+    const clone = review.cloneNode(true);
+    clone.setAttribute('aria-hidden', 'true');
+    reviewTrack.appendChild(clone);
+  });
+}
+
 localStorage.removeItem("siteTheme");
 applyLanguage(localStorage.getItem("siteLang") || "bg");
