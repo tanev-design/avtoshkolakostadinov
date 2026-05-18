@@ -37,6 +37,8 @@
 html {
   scroll-behavior: smooth;
   overscroll-behavior: none;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 body {
@@ -51,6 +53,8 @@ body {
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%;
   overscroll-behavior: none;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 :lang(bg) {
@@ -164,13 +168,13 @@ textarea {
   gap: 0.9rem;
   min-height: 56px;
   min-width: max-content;
+  flex: 0 0 auto;
 }
 
 .brand img {
-  width: 118px;
+  width: 154px;
   height: auto;
   object-fit: contain;
-  mix-blend-mode: multiply;
 }
 
 .brand span {
@@ -219,6 +223,7 @@ textarea {
   display: flex;
   align-items: center;
   gap: 0.55rem;
+  flex: 0 0 auto;
 }
 
 .nav-socials {
@@ -938,6 +943,8 @@ textarea {
   overflow: hidden;
   padding: 0.5rem 0 1rem;
   width: 100%;
+  max-width: 100%;
+  contain: paint;
   -webkit-mask-image: linear-gradient(to right, transparent, rgba(0,0,0,1) 5%, rgba(0,0,0,1) 95%, transparent);
   mask-image: linear-gradient(to right, transparent, rgba(0,0,0,1) 5%, rgba(0,0,0,1) 95%, transparent);
 }
@@ -1677,6 +1684,33 @@ textarea {
     min-height: 190px;
   }
 
+  .review-marquee {
+    margin-inline: -1rem;
+    padding-inline: 1rem;
+    overflow-x: auto;
+    overscroll-behavior-x: contain;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    -webkit-mask-image: none;
+    mask-image: none;
+  }
+
+  .review-marquee::-webkit-scrollbar {
+    display: none;
+  }
+
+  .review-track {
+    width: max-content;
+    gap: 1rem;
+    animation: none;
+    transform: none;
+  }
+
+  .review-track > article {
+    width: min(82vw, 330px);
+    min-height: 0;
+  }
+
 
 
   .course-card {
@@ -1709,15 +1743,37 @@ textarea {
 @media (max-width: 580px) {
   .nav-shell {
     width: min(calc(100% - 1rem), 1480px);
+    gap: 0.45rem;
   }
 
   .brand img {
-    width: 104px;
+    width: 154px;
+  }
+
+  .nav-actions {
+    gap: 0.35rem;
+  }
+
+  .nav-socials {
+    display: none;
+  }
+
+  .segmented {
+    min-height: 34px;
+    padding: 0.12rem;
   }
 
   .segmented button {
-    min-width: 32px;
-    padding: 0 0.42rem;
+    min-width: 35px;
+    min-height: 29px;
+    padding: 0 0.35rem;
+    gap: 0.22rem;
+    font-size: 0.7rem;
+  }
+
+  .segmented button svg {
+    width: 1em;
+    height: 0.75em;
   }
 
   .hero-actions {
@@ -1814,5 +1870,16 @@ textarea {
     overflow: hidden;
     clip: rect(0 0 0 0);
     white-space: nowrap;
+  }
+}
+
+@media (max-width: 360px) {
+  .brand img {
+    width: 128px;
+  }
+
+  .segmented button {
+    min-width: 32px;
+    padding: 0 0.28rem;
   }
 }
